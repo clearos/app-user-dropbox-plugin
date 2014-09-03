@@ -1,9 +1,9 @@
 
 Name: app-user-dropbox-plugin
 Epoch: 1
-Version: 1.0.0
+Version: 1.6.5
 Release: 1%{dist}
-Summary: Dropbox User Policy - APIs and install
+Summary: Dropbox User Policy - Core
 License: LGPLv3
 Group: ClearOS/Libraries
 Source: app-user-dropbox-plugin-%{version}.tar.gz
@@ -13,7 +13,7 @@ Buildarch: noarch
 Dropbox plugin provides access control to allow users to create a home directory folder sync to the cloud-based Dropbox (http://www.dropbox.com) service.
 
 %package core
-Summary: Dropbox User Policy - APIs and install
+Summary: Dropbox User Policy - Core
 Requires: app-base-core
 Requires: app-accounts-core
 
@@ -54,9 +54,7 @@ exit 0
 %files core
 %defattr(-,root,root)
 %exclude /usr/clearos/apps/user_dropbox_plugin/packaging
-%exclude /usr/clearos/apps/user_dropbox_plugin/tests
 %dir /usr/clearos/apps/user_dropbox_plugin
 /usr/clearos/apps/user_dropbox_plugin/deploy
 /usr/clearos/apps/user_dropbox_plugin/language
-/usr/clearos/apps/user_dropbox_plugin/libraries
 /var/clearos/accounts/plugins/dropbox.php
