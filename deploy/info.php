@@ -37,3 +37,5 @@ $app['core_file_manifest'] = array(
         'target' => '/var/clearos/accounts/plugins/dropbox.php'
     ),
 );
+
+$app['delete_dependency'] = array();
